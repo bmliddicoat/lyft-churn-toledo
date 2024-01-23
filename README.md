@@ -19,7 +19,8 @@ This project involves a detailed analysis of Lyft's pricing strategy for a ride-
 ## Analysis Approach
 
 * Modeling Match Rates: Based on experiment data, a linear model was created to estimate match rates for varying Lyft takes.
-* Net Revenue Calculation: Calculated by considering the total revenue, churn rates, and CAC for different scenarios of Lyft's take.
+* Net Revenue Calculation: Calculated by considering the total revenue, churn rates, and CAC for different scenarios of Lyft's take.  Excluded match rates above 1 to remove outliers and unrealistic outcomes.  
+* Expanded Net Revenue Calculation: Took approach to Net Revenue Calculations and expanded from orginal range of 0.01 to 25.00.  Excluded match rates below 0 to remove outliers and unrealistic outcomes.  
 * Visualization: Plotted Match Rate vs. Lyft Take and Net Revenue vs. Lyft Take for a clearer understanding of trends.
   
 ## Key Findings
@@ -30,7 +31,7 @@ This project involves a detailed analysis of Lyft's pricing strategy for a ride-
   
 # Recommendations
 
-* Cost Structure Review: Reevaluate the cost structure, including CAC and operational expenses.
+* Cost Structure Review: Reevaluate the cost structure, including CAC and operational expenses.  Decreasing CAC for driver to lower cost is first area to consider.  
 * Market Dynamics: Consider external factors such as competition and seasonal variations.
 * Data-Driven Decisions: Use more detailed data, especially on ride frequency and driver behavior, for further analysis.
 
